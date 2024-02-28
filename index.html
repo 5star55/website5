@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title style="position: sticky; bottom: 0;">Arole Giveaway Company</title>
+</head>
+<style>
+    #countdown{
+        box-sizing: border-box;
+        border: 5px solid red;
+    }
+    body{
+        background-color: brown;
+        display: grid;
+        flex-direction: row;
+        grid-template-columns: repeat(auto-fit,min-max(9,1fr));
+        grid-auto-rows: 75px auto 75px;
+        grid-template-areas:"nav nav nav nav nav nav nav nav nav"
+                            "con con con con pics pics pics pics pics"
+                            "con con con con pics pics pics pics pics"; 
+        grid-gap: 20px;
+
+    }
+    #countdown{
+        font-size: 35px;
+    }
+    .content{
+        grid-area: con;
+        flex: 1;
+    
+    }
+    .pics{
+        grid-area: pics;
+        flex: 2;
+    }
+    .nav{
+        grid-area: nav;
+        position: sticky;
+        bottom: 0;}
+
+         @media screen and (max-width: 800px){
+           body{
+           grid-template-columns: 1fr;
+            background-color: brown;
+            background-color: aliceblue;
+            grid-template-areas:"nav nav nav nav nav nav nav nav nav"
+                                "con con con con con con con con con"
+                                "pics pics pics pics pics pics pics pics pics"; 
+           } 
+        }
+    
+            
+
+
+
+    
+</style>
+<body style="margin: 0; margin-top:0;">
+  <span style="display:block;" class="nav"><h1 style="width: 100%; background-color: black; color: aliceblue; text-align: center; margin: 0;">Arole&Co company</h1></span> 
+    <div class="content" style="">
+        <button style=" z-index: 1;">🤖</button>
+        <h1 style="margin-left : 20px;">Giveaway Time!</h1>
+    <p style="font-size: 25px; margin-left : 20px;">This giveaway is conducted by Arole&Co company <br> It is happening in ten days and it is to help Nigeria students in aspect of education and other aspect these devices can help <br> Wait 10 days and get your package 😁</p>
+    <p style="margin-left : 20px;" ><i>There goes your timer, keep in touch and wish you goodluck.</i></p>
+    <div id="countdown" style="display: inline-block; flex-direction: row; justify-content: space-around; font: 1000px; border-radius: 16px; box-sizing: border-box;  border: 5px solid red;background-color:black; color: aliceblue; font-family: Verdana, Geneva, Tahoma, sans-serif; border: 3px red; justify-content: center; margin-left:50px; ">
+    </div></div>
+    <div class="pics" style="margin-left: 70px;"><img style="height: 200px; width:500px; border-radius: 500px; margin-top: 60px;" src="computer.jpg" alt=""><img style="height: 200px; width:500px; border-radius: 500px; ;" src="gift-6856671_1280.jpg" alt="">
+    </div>
+   <script src="main.js"></script>
+   
+</body>
+</html>
